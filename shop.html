@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Rental Shop | Ottawa Decor Rentals</title>
+    <meta name="description"
+        content="Browse our curated catalog of premium event rentals. Vases, linens, candles, and more for your perfect event in Ottawa.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rental Shop | Ottawa Decor Rentals">
+    <meta property="og:description"
+        content="Browse our curated catalog of premium event rentals. Vases, linens, candles, and more.">
+    <meta property="og:image" content="/images/bundles/luxury_picnic_social.png">
+
+    <!-- Google Fonts: Inter for UI and Playfair Display for Serifs -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols Outlined -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="https://3917cce0-be55-4b78-ac06-8d125d67b15f.assets.booqable.com/v2/booqable.js" defer></script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-[#333]">
+    <!-- Top Navigation Bar -->
+    <header
+        class="sticky top-0 z-50 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-blush dark:border-white/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
+            <div class="flex items-center gap-3">
+                <div class="size-8 text-primary">
+                    <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd"
+                            d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                            fill="currentColor" fill-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <a href="index.html"
+                    class="font-serif text-2xl font-bold tracking-tight text-background-dark dark:text-white hover:opacity-80 transition-opacity">
+                    Ottawa Decor <span class="text-primary/80 italic font-normal">Rentals</span>
+                </a>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-medium text-primary transition-colors" href="shop.html">Rental Shop</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="bundles.html">Bundled
+                    Services</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors"
+                    href="index.html#styling-services">Styling Services</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors"
+                    href="index.html#gallery">Portfolio</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="shop.html"
+                    class="bg-primary text-white text-sm font-bold py-2.5 px-6 rounded-lg hover:brightness-110 transition-all shadow-sm">
+                    Book Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Shop Content -->
+    <main class="max-w-7xl mx-auto px-6 lg:px-12 py-12 flex flex-col md:flex-row gap-12">
+        <!-- Sidebar Filter -->
+        <aside class="w-full md:w-64 shrink-0">
+            <div class="booqable-sidebar"></div>
+        </aside>
+
+        <!-- Main Product Area -->
+        <div class="flex-1">
+            <div class="booqable-product-list"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-background-dark text-white py-20 px-6 mt-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="size-6 text-primary">
+                            <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                    d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                                    fill="currentColor" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h2 class="font-serif text-xl font-bold italic">Ottawa Decor Rentals</h2>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed max-w-xs">
+                        Elevating event design through romantic details and curated rentals. Based in Ottawa, serving
+                        celebrations across the region.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6 text-sm uppercase tracking-widest text-primary">Explore</h5>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li><a class="hover:text-white transition-colors" href="shop.html">Catalog</a></li>
+                        <li><a class="hover:text-white transition-colors" href="index.html#styling-services">Styling
+                                Services</a></li>
+                        <li><a class="hover:text-white transition-colors" href="bundles.html">Design Packages</a></li>
+                        <li><a class="hover:text-white transition-colors" href="index.html#floral-services">Florals</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6 text-sm uppercase tracking-widest text-primary">Company</h5>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li><a class="hover:text-white transition-colors" href="index.html#why-choose-us">Our Story</a>
+                        </li>
+                        <li><a class="hover:text-white transition-colors" href="index.html#gallery">Portfolio</a></li>
+                        <li><a class="hover:text-white transition-colors"
+                                href="mailto:hello@ottawadecorrentals.com">Contact</a></li>
+                        <li><a class="hover:text-white transition-colors"
+                                href="mailto:hello@ottawadecorrentals.com?subject=Terms%20and%20Policy%20Inquiry">Terms
+                                & Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6 text-sm uppercase tracking-widest text-primary">Connect</h5>
+                    <div class="flex gap-4 mb-6">
+                        <a class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary transition-all"
+                            href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                            aria-label="Follow us on Instagram">
+                            <span class="material-symbols-outlined text-lg">camera_alt</span>
+                        </a>
+                        <a class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary transition-all"
+                            href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                            aria-label="Share on social media">
+                            <span class="material-symbols-outlined text-lg">share</span>
+                        </a>
+                        <a class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary transition-all"
+                            href="mailto:hello@ottawadecorrentals.com" aria-label="Email us">
+                            <span class="material-symbols-outlined text-lg">mail</span>
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-400">hello@ottawadecorrentals.com</p>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-10 text-center text-xs text-gray-500">
+                © 2026 Ottawa Decor Rentals. All Rights Reserved. Designed with Love.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cross-Page Routing Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const params = new URLSearchParams(window.location.search);
+            const targetCollection = params.get('collection');
+
+            if (targetCollection) {
+                let attempts = 0;
+                const checkExist = setInterval(function () {
+                    attempts++;
+                    const collections = document.querySelectorAll('.bq-sidebar-component .Collection-hBbmKD');
+
+                    if (collections.length > 0) {
+                        clearInterval(checkExist);
+                        for (const col of collections) {
+                            const nameDiv = col.querySelector('div');
+                            if (nameDiv && nameDiv.textContent.trim().toLowerCase() === targetCollection.trim().toLowerCase()) {
+                                col.click();
+                                break;
+                            }
+                        }
+                    } else if (attempts > 100) {
+                        clearInterval(checkExist);
+                    }
+                }, 100);
+            }
+        });
+    </script>
+</body>
+
+</html>
