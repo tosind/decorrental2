@@ -52,19 +52,19 @@
                 <p class="text-gray-500">Interested in our floral or styling services, or checking availability? Fill
                     out the details below and we'll get back to you within 24 hours.</p>
             </div>
-            <form id="contactForm" class="space-y-6">
+            <form id="contactForm" name="contact" method="POST" data-netlify="true" class="space-y-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">First & Last
                             Name</label>
-                        <input type="text" required
+                        <input type="text" name="name" required
                             class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all placeholder:text-gray-400"
                             placeholder="Jane Doe">
                     </div>
                     <div>
                         <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Email
                             Address</label>
-                        <input type="email" required
+                        <input type="email" name="email" required
                             class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all placeholder:text-gray-400"
                             placeholder="jane@example.com">
                     </div>
@@ -73,13 +73,13 @@
                     <div>
                         <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Event
                             Date</label>
-                        <input type="date"
+                        <input type="date" name="date"
                             class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-gray-700">
                     </div>
                     <div>
                         <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Inquiry
                             Type</label>
-                        <select
+                        <select name="inquiry_type"
                             class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-gray-700">
                             <option>General Inquiry</option>
                             <option>Floral Services</option>
@@ -91,7 +91,7 @@
                 <div>
                     <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Event Details &
                         Vision</label>
-                    <textarea rows="4"
+                    <textarea rows="4" name="details"
                         class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all placeholder:text-gray-400 resize-none"
                         placeholder="Tell us about your theme, guest count, venue, and any specific items or looks you love..."></textarea>
                 </div>
@@ -115,13 +115,7 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your inquiry! Our team will contact you shortly to discuss your event.');
-            document.getElementById('contactForm').reset();
-        });
-    </script>
+    <!-- Scripts -->
 </body>
 
 </html>
